@@ -50,6 +50,14 @@ p{
   margin-left: 2%;
 }
 
+p.passport{
+  font-size: 90%;
+
+  text-decoration: underline;
+  
+}
+
+
 
 
 input[type="text"],
