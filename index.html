@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Payment Form</title>
+</head>
+<body>
+
+    <h1 class="main">Payment Form</h1>
+   
+    <form>
+    
+<div class="all">
+
+    <div class="userdetails">
+        <h1>User details</h1>
+    </div>
+
+        <div class="name"><p>First Name </p>
+            <input type="text" name="fname" id="fname" placeholder="First name" required>
+
+      
+      <p>Last Name</p>
+        <input type="text" name="lname" id="lname" placeholder="Last name" required></div>
+<br>
+<br>
+
+       <div><p>Enter passport size picture not larger than 3 bits</p> 
+        <input type="file"></div>
+    <br>
+    <br>
+    <fieldset>
+
+    <div ><legend class="gender">Gender</legend></div>
+
+    <div>
+       <p>
+             <input type="radio" name ="gender" id="male" > Male
+            <input type="radio" name ="gender" id="female"> Female
+            <input type="radio" name ="gender" id="others" checked>Others
+
+       </p>
+    </div>
+    
+    </fieldset>
+    
+    <div>
+    <p>Address :</p>
+    <textarea name="address" id="address"  cols="60" rows="5">Address goes here</textarea> </div>
+
+
+        <div>  <p>Email:</p>
+            <input type="email" name="email" id="email" placeholder="abs@xyz.com">  </div>
+
+        <div>
+        <p>Pincode:</p>
+        <input type="number" name="pincode" id="pincoded" placeholder="Enter Pincode">  
+         </div>
+
+         <br>
+         <br>
+         <br>
+         <hr>
+    
+        <h1 class="payment">Payment Details</h1>
+
+        <div>
+        <p>Card type:  </p>
+            <select name="card_type" id="card_type">
+                
+                <option name="">----Select your Card-----</option>
+                <option name="credit">Credit Card</option>
+                <option name="debit">Debit Card</option>
+                <option name="master">Master Card</option>
+
+            </select>
+        
+        </div>
+
+        
+        <div>
+            <p>Card number :  </p>
+                <input type="number" name="card_number" id="card_number" placeholder="Valid Card Number" required>
+            
+        </div>
+
+        <div>
+            <p>Expiration Date: </p> 
+
+                <input type="date" name="expiration" id="expiration" required> 
+            
+    
+        </div>
+
+
+        <div>
+            <p>CVV : </p>
+                <input type="password" name="cvv" placeholder ="123" id="cvv" required>
+            
+            
+        </div>
+        
+        <div>
+            <input type="submit">
+         </div>   
+
+</div>
+
+    </form>
+</body>
+</html>
